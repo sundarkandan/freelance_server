@@ -19,7 +19,7 @@ app.use(cors({
 
 const Projects=mongoose.model('projects',schema)
 
-const mongodbUrl="mongodb://sundarkandan:Editor__sundar2006@ac-rtru7jy-shard-00-00.bxnagzt.mongodb.net:27017,ac-rtru7jy-shard-00-01.bxnagzt.mongodb.net:27017,ac-rtru7jy-shard-00-02.bxnagzt.mongodb.net:27017/?ssl=true&replicaSet=atlas-z7fgwk-shard-0&authSource=admin&appName=Cluster0"
+const mongodbUrl="mongodb+srv://sundarkandan:Editor__sundar2006@cluster0.bxnagzt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 mongoose.connect(mongodbUrl).then(()=>{
     console.log('DB connected')
 })
